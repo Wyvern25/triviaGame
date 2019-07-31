@@ -15,24 +15,40 @@
 </head>
 
 <body>
-    <h1>Trivia Game</h1>
+    <h1>Simple Math Trivia Game</h1>
 
-    <p id="counter"></p>
+    <p>Don't let the timer hit 0 or all will be marked incorrect</p>
+    <br>
+    <p>Time remaining: <span id='counter'></span></p><br>
 
     <form>
-        <p>Capital of California:</p>
-        <input type="radio" name="cap" value="san_francisco" id="m"> <label for="m">san francisco</label>
-        <input type="radio" name="cap" value="new york"> new york
-        <input type="radio" name="cap" value="wichita"> wichita
-        <input type="radio" name="cap" value="sacramento"> sacramento<br>
+        <p>365-48</p>
+        <input type="radio" name="math1" value="371" id="m" check="y"> <label for="m">371</label>
+        <input type="radio" name="math1" value="137" check="n"> 137
+        <input type="radio" name="math1" value="317" check="n"> 317
+        <input type="radio" name="math1" value="217" check="n"> 217<br><br>
+        <!-- <input type="submit" value="Submit"> -->
 
         <p>2+1:</p>
-        <input type="radio" name="cap" value="3" id="m"> <label for="m">3</label>
-        <input type="radio" name="cap" value="4"> 4
-        <input type="radio" name="cap" value="1"> 1
-        <input type="radio" name="cap" value="0"> 0<br>
+        <input type="radio" name="math2" value="3" id="m"> <label for="m">3</label>
+        <input type="radio" name="math2" value="4"> 4
+        <input type="radio" name="math2" value="1"> 1
+        <input type="radio" name="math2" value="0"> 0<br>
+        <br>
+        
+        <p>20*6:</p>
+        <input type="radio" name="math3" value="50" id="m"> <label for="m">50</label>
+        <input type="radio" name="math3" value="100"> 100
+        <input type="radio" name="math3" value="120"> 120
+        <input type="radio" name="math3" value="150"> 150<br>
+        <br>
 
-    
+        <p>15/5</p>
+        <input type="radio" name="math4" value="5" id="m"> <label for="5">5</label>
+        <input type="radio" name="math4" value="4"> 4
+        <input type="radio" name="math4" value="2"> 2
+        <input type="radio" name="math4" value="3"> 3<br>
+        <br>
         <input type="submit" value="Submit">
     </form>
 
@@ -45,7 +61,7 @@
         <span id ="question"></span>
         <span id="answers"></span>
     </div>
-
+    <br>
     <div id="Score">
         <p>Correct: <span id='correct'></span></p>
         <p>Incorrect: <span id='incorrect'></span></p>
